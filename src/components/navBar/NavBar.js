@@ -3,11 +3,11 @@ import './NavBar.css';
 export const NavBar = () => {
 
     return (
- <nav>
+ <nav className="navBar">
 
-     <span>Comic Store</span>
+     <span className="navBar__title">Comic Store</span>
 
-     <ul>
+     <ul className="navBar__menu">
         <li>Home</li>
         <li>Featured</li>
         <li>Categories</li>

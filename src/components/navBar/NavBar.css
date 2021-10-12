@@ -1,10 +1,10 @@
-* {
+.navBar * {
   margin: 0;
   padding: 0;
   color: white;
 }
 
-nav {
+.navBar {
   background-color: grey;
   display: flex;
   flex-flow: row wrap;
@@ -12,16 +12,16 @@ nav {
   justify-content: space-between;
 }
 
-nav span {
+.navBar .navBar__title {
   font-size: 3rem;
 }
 
-nav ul {
+.navBar .navBar__menu {
   display: flex;
   flex-flow: row wrap;
 }
 
-nav ul li {
+.navBar .navBar__menu li {
   list-style-type: none;
   padding: 10px;
   font-size: 1.5rem;
