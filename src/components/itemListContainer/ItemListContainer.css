@@ -1,0 +1,13 @@
+.listContainer {
+  width: 85%;
+  margin: 10px auto;
+  background-color: rgb(231, 231, 231);
+  height: 200px;
+  border: 1px solid darkgrey;
+  text-align: center;
+  padding: 1rem;
+}
+
+.listContainer__content span {
+  font-size: 2rem;
+}

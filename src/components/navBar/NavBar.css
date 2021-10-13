@@ -1,28 +1,44 @@
+/* Formateo */
+
 .navBar * {
   margin: 0;
   padding: 0;
   color: white;
 }
 
+/* Etiqueta nav */
+
 .navBar {
   background-color: grey;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  min-height: 8vh;
 }
 
-.navBar .navBar__title {
-  font-size: 3rem;
+/* Hamburguer menu */
+
+.toggleMenu {
+  display: none;
 }
+
+/* Logo */
+
+.navBar .navBar__title {
+  font-size: 1.3rem;
+  padding: 0.6rem;
+}
+
+/* ul & li */
 
 .navBar .navBar__menu {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 
 .navBar .navBar__menu li {
   list-style-type: none;
-  padding: 10px;
-  font-size: 1.5rem;
+  padding: 0.6rem;
+  font-size: 1.1rem;
 }
