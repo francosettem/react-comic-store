@@ -8,7 +8,8 @@ export const CartWidget = () => {
     const [quantity, setQuantity] = useState(0);
 
     return  (
-    <li className="Menu__shopping Menu__item">Basket
+    <li className="Menu__shopping Menu__item">
+        Basket
         <div className="Shopping__cart">
             <FontAwesomeIcon icon={faShoppingCart} />
             <span className="Shopping__cart--quantity">{quantity}

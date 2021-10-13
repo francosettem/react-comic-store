@@ -4,12 +4,16 @@ import { ItemListContainer } from './components/itemListContainer/ItemListContai
 
 function App() {
 
-  const greeting = "El carrito está vacio :/"; 
+  const greeting = "Bienvenido a la Tienda de Comics 🦸"; 
+  const containerResume = "No hay productos en el carrito 🤔" ;
 
   return (
     <div className="App">
       <NavBar/>
-      <ItemListContainer props={greeting} />
+      <ItemListContainer message={greeting}>
+        <span>{containerResume}</span>
+        </ItemListContainer>
+
     </div>
   );
 }
