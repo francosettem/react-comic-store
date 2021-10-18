@@ -1,6 +1,6 @@
 import './ItemListContainer.css';
 
-export const ItemListContainer = ({message, children}) => {
+export const ItemListContainer = ({children}) => {
 
 
     return (
@@ -8,13 +8,7 @@ export const ItemListContainer = ({message, children}) => {
 
         <div className="listContainer__content">
 
-        <span>{message}</span>
-
-        <br/>
-        <br/>
-
         {children}
-
 
         </div>
 
