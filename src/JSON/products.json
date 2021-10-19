@@ -1,0 +1,74 @@
+[
+    {
+      "price": 40,
+      "id": 1,
+      "category": "Comic",
+      "title": "Spiderman N°14",
+      "thumbnailUrl": "https://kdn.scdn1.secure.raxcdn.com/image/cache/catalog/products/best-books/personalized-book-spider-man-best-500x500.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi fugit libero quam eos.",
+      "stock": 1
+    },
+    {
+      "price": 90,
+      "id": 2,
+      "category": "Comic",
+      "title": "Batman N°27",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0276/3250/0771/products/Detective-Comics-_27_Foil_Rev1_500x500_crop_center.png?v=1611195140",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi fugit libero quam eos.",
+      "stock": 2
+    },
+    {
+      "price": 150,
+      "id": 3,
+      "category": "Figura",
+      "title": "Figura de Hulk",
+      "thumbnailUrl": "https://gameskeysaustralia.com/image/cache/catalog/data/2019/others/IRO02917-500x500.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi fugit libero quam eos.",
+      "stock": 7
+    },
+    {
+      "price": 30,
+      "id": 4,
+      "category": "DVD",
+      "title": "Blu-ray DBZ",
+      "thumbnailUrl": "https://www.platekompaniet.no/globalassets/imported-images/dvd/2000963155.jpg?preset=ProductPage",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi fugit libero quam eos.",
+      "stock": 12
+    },
+    {
+      "price": 20,
+      "id": 5,
+      "category": "Manga",
+      "title": "Manga Naruto N°19",
+      "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/51h%2BflcvEcL.__BG0,0,0,0_FMpng_AC_UL200_SR200,200_.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi fugit libero quam eos.",
+      "stock": 10
+    },
+    {
+      "price": 26,
+      "id": 6,
+      "category": "Comic",
+      "title": "Superman N°122",
+      "thumbnailUrl": "https://movieplay01.akamaized.net/17952-home_default/superman-num-90-num-11.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi fugit libero quam eos.",
+      "stock": 3
+    },
+    {
+      "price": 80,
+      "id": 7,
+      "category": "Figura",
+      "title": "Figura Naruto",
+      "thumbnailUrl": "https://nihongogo.com/wordpress/wp-content/uploads/2014/06/Action-Figure-Spotlight-Naruto-by-Bandai-Tamashii-Nations-S.H.-Figuarts-1-150x150.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi fugit libero quam eos.",
+      "stock": 4
+    },
+    {
+      "price": 50,
+      "id": 8,
+      "category": "Accesorios",
+      "title": "Mochila PS4",
+      "thumbnailUrl": "https://mulaby.com/wp-content/uploads/2020/05/imageedit_12_9406851146.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati excepturi fugit libero quam eos.",
+      "stock": 2
+    }
+  ]

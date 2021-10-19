@@ -26,9 +26,7 @@ export const ItemCount = ({initial, stock}) =>{
 
     return (
 
-        <div className="Item">
-        <img className="Item__image" src="https://via.placeholder.com/150" alt="" />
-        <p className="Item__title">Lorem ipsum</p>
+        <div>
         <div className="Item__counter">
         <button className="Item__button" onClick={onRemove}>-</button>
         <span>{counter}</span>

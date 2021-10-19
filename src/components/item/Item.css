@@ -1,0 +1,14 @@
+.Item {
+  width: 200px;
+  min-height: 300px;
+  background-color: white;
+  border: 1px solid darkgrey;
+  padding: 1rem;
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+.Item img {
+  width: 150px;
+  height: 150px;
+}
