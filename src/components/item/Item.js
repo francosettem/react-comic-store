@@ -9,6 +9,7 @@ export const Item = ({item}) => {
         <p className="Item__title">{item.title}</p>
         <p className="Item__description">{item.description}</p>
         <p className="Item__category">Categoria: {item.category}</p>
+        <p className="Item__price">Precio: ${item.price}</p>
         <ItemCount initial={1} stock={item.stock}/>
         </div>
     )
