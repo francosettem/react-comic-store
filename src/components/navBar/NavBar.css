@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 /* Formateo */
 
 .navBar * {
@@ -9,11 +11,11 @@
 /* Etiqueta nav */
 
 .navBar {
-  background-color: grey;
+  background-color: #e63946;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-height: 8vh;
 }
 
@@ -26,8 +28,9 @@
 /* Logo */
 
 .navBar .navBar__title {
-  font-size: 1.3rem;
+  font-size: 2rem;
   padding: 0.6rem;
+  font-family: "Lobster", cursive;
 }
 
 /* ul & li */

@@ -1,9 +1,9 @@
 .listContainer {
   width: 85%;
   margin: 10px auto;
-  background-color: rgb(231, 231, 231);
+  background-color: #1d3557;
   min-height: 200px;
-  border: 1px solid darkgrey;
+  border: 1px solid #f1faee;
   text-align: center;
   padding: 1rem;
 }

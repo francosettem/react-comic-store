@@ -8,8 +8,8 @@ export const Item = ({item}) => {
         <img className="Item__image" src={item.thumbnailUrl} alt="" />
         <p className="Item__title">{item.title}</p>
         <p className="Item__description">{item.description}</p>
-        <p className="Item__category">Categoria: {item.category}</p>
-        <p className="Item__price">Precio: ${item.price}</p>
+        <p className="Item__category">Category: {item.category}</p>
+        <p className="Item__price">Price: ${item.price}</p>
         <ItemCount initial={1} stock={item.stock}/>
         </div>
     )
