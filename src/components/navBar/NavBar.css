@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 8vh;
+  border-bottom: 1px solid red;
 }
 
 /* Hamburguer menu */
@@ -43,5 +44,6 @@
 .navBar .navBar__menu li {
   list-style-type: none;
   padding: 0.6rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
