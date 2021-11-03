@@ -1,26 +1,26 @@
 import { Item } from "../item/Item";
-import products from '../../JSON/products.json';
 import { useEffect, useState } from "react";
 import Loader from "react-loader-spinner";
+import products from "../../JSON/products.json";
+import { useParams } from "react-router";
 
 export const ItemList = () => {
-
-    const [items, setItems] = useState();
+    const {categoryId} = useParams()
+    const [items, setItems] = useState(null);
 
     useEffect(() => {
         const myPromise = new Promise(function(resolve) {
             setTimeout(() => {
                 resolve(products)
-            }, 3000);
+            }, 100);
         });      
     
         myPromise.then(resolve => {
                 console.log(resolve);
                 console.log("Los productos se cargaron correctamente 🙂");
-                setItems(resolve);
+                setItems(resolve.filter(r => r.category === categoryId));
             })
-      }, []);
-
+      }, [categoryId]);
 
     return (
     <>

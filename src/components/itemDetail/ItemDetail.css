@@ -1,0 +1,18 @@
+.itemDetail {
+  background-color: #f1faee;
+  width: 85%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #1d3557;
+}
+
+.itemDetail__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .itemDetail__image {
+    width: 40%;
+  }
+}
