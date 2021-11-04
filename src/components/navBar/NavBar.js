@@ -8,9 +8,9 @@ export const NavBar = () => {
 
     return (
  <nav className="navBar">
-
+     <NavLink to="/">      
      <span className="navBar__title">Comic Store</span>
-
+     </NavLink>
      <div className="toggleMenu">
      <FontAwesomeIcon icon={faBars} />
      </div>

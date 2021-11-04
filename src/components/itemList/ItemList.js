@@ -5,7 +5,7 @@ import products from "../../JSON/products.json";
 import { useParams } from "react-router";
 
 export const ItemList = () => {
-    const {categoryId} = useParams()
+    const {category} = useParams();
     const [items, setItems] = useState(null);
 
     useEffect(() => {
@@ -18,9 +18,9 @@ export const ItemList = () => {
         myPromise.then(resolve => {
                 console.log(resolve);
                 console.log("Los productos se cargaron correctamente 🙂");
-                setItems(resolve.filter(r => r.category === categoryId));
+               category ? setItems(resolve.filter(r => r.category === category)) : setItems(resolve);
             })
-      }, [categoryId]);
+      }, [category]);
 
     return (
     <>

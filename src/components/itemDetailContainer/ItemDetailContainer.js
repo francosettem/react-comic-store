@@ -20,7 +20,7 @@ export const ItemDetailContainer = () => {
         newPromise.then(resolve => {
                 console.log(resolve);
                 console.log("Detalles de productos cargados correctamente 🙂");
-                setDetails(resolve.filter(i => i.id == itemId));
+                setDetails(resolve.filter(i => i.id === Number(itemId)));
             })
       }, [itemId]);
 
