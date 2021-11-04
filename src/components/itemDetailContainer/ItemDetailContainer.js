@@ -20,14 +20,14 @@ export const ItemDetailContainer = () => {
         newPromise.then(resolve => {
                 console.log(resolve);
                 console.log("Detalles de productos cargados correctamente 🙂");
-                setDetails(resolve.filter(i => i.id === Number(itemId)));
-            })
+                setDetails(resolve.find((item) => item.id === Number(itemId)));
+                })
       }, [itemId]);
 
 
     return (
     <>
-    {details ? (details.map(detail => <ItemDetail key={detail.id} detail={detail}/>)) : (<Loader type="Puff" color="#00BFFF" height={100} width={100} />)}
+    {details ? <ItemDetail details={details} /> : <center><Loader type="Puff" color="#00BFFF" height={100} width={100} /></center>}
     </>
     )
     
