@@ -9,13 +9,13 @@ export const ItemList = () => {
     const [items, setItems] = useState(null);
 
     useEffect(() => {
-        const myPromise = new Promise(function(resolve) {
+        const getProducts = new Promise(function(resolve) {
             setTimeout(() => {
                 resolve(products)
             }, 100);
         });      
     
-        myPromise.then(resolve => {
+        getProducts.then(resolve => {
                 console.log(resolve);
                 console.log("Los productos se cargaron correctamente 🙂");
                category ? setItems(resolve.filter(r => r.category === category)) : setItems(resolve);

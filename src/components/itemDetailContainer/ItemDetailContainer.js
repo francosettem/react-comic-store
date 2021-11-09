@@ -10,14 +10,14 @@ export const ItemDetailContainer = () => {
   const [details, setDetails] = useState(null);
 
   useEffect(() => {
-        const newPromise = new Promise(function(resolve) {
+        const getData = new Promise(function(resolve) {
             setTimeout(() => {
                 resolve(products)
             }, 100);
         });      
 
 
-        newPromise.then(resolve => {
+        getData.then(resolve => {
                 console.log(resolve);
                 console.log("Detalles de productos cargados correctamente 🙂");
                 setDetails(resolve.find((item) => item.id === Number(itemId)));

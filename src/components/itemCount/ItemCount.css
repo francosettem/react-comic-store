@@ -1,12 +1,25 @@
 .Item__counter {
   border: 1px solid grey;
   background-color: whitesmoke;
+  width: 30%;
+  margin: 0 auto;
+  min-height: 50px;
 }
 
 .Item__button {
   border: none;
-  width: 30px;
-  height: 30px;
   background-color: white;
   cursor: pointer;
+  font-size: 2rem;
+  margin: 15px;
+}
+
+.Item__stock {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Item__counter {
+    width: 80%;
+  }
 }

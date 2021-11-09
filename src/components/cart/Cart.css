@@ -1,0 +1,7 @@
+.cart {
+  background-color: white;
+  min-height: 80vh;
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid grey;
+}

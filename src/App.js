@@ -5,6 +5,7 @@ import { Home } from './components/home/Home';
 import { ItemListContainer } from './components/itemListContainer/ItemListContainer';
 import { ItemList } from './components/itemList/ItemList';
 import {ItemDetailContainer} from "./components/itemDetailContainer/ItemDetailContainer";
+import {Cart} from "./components/cart/Cart";
 
 function App() {
 
@@ -32,6 +33,12 @@ function App() {
     <Route exact path="/item/:itemId">
 
     <ItemDetailContainer />
+
+    </Route>
+
+    <Route exact path="/cart">
+
+    <Cart/>
 
     </Route>
 

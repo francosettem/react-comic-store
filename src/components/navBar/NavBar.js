@@ -31,7 +31,7 @@ export const NavBar = () => {
             </NavLink>
         <NavLink to="/category/merchandising"><li className="Menu__item">Merchandising</li></NavLink>
         <li className="Menu__item">About Us</li>
-        <CartWidget />
+        <NavLink to="/cart"><CartWidget /></NavLink>
     </ul>      
 
  </nav>
