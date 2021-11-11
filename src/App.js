@@ -6,10 +6,12 @@ import { ItemListContainer } from './components/itemListContainer/ItemListContai
 import { ItemList } from './components/itemList/ItemList';
 import {ItemDetailContainer} from "./components/itemDetailContainer/ItemDetailContainer";
 import {Cart} from "./components/cart/Cart";
+import {CartProvider} from "./contexts/CartContext";
 
 function App() {
 
   return (
+    <CartProvider>
     <BrowserRouter>
 
     <NavBar/>
@@ -45,6 +47,7 @@ function App() {
     </Switch>
 
     </BrowserRouter>
+    </CartProvider>
   )
 }
 

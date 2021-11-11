@@ -2,16 +2,21 @@ import { ItemCount } from '../itemCount/ItemCount';
 import './ItemDetail.css';
 import { useState } from 'react/cjs/react.development';
 import { NavLink } from 'react-router-dom';
+import { useCart } from '../../contexts/CartContext';
 
 export const ItemDetail = ({details})=> {
 
+    const categoryDetail = details.category;
     const [flag, setFlag] = useState(true);
     const [quantity, setQuantity] = useState(null);
+    const {cartStatus, addItem } = useCart();
 
         const onAdd = (counter)=> {
             setFlag(false);
-            setQuantity(counter);
             alert("Agregaste " + counter + " producto/s a el carrito")
+            setQuantity(counter);
+            addItem(quantity);
+            console.log(cartStatus);
               };
               
 
@@ -20,7 +25,7 @@ export const ItemDetail = ({details})=> {
         <img className="itemDetail__image" src={details.thumbnailUrl} alt="" />
         <p className="itemDetail__title">{details.title}</p>
         <p className="itemDetail__description">{details.description}</p>
-        <p className="itemDetail__category">Category: {details.category}</p>
+        <p className="itemDetail__category">Category: {categoryDetail.toUpperCase()}</p>
         <p className="itemDetail__price">Price: ${details.price}</p>
 
         {flag 
