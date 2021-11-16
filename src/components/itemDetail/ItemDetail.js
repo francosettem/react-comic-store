@@ -1,6 +1,6 @@
 import { ItemCount } from '../itemCount/ItemCount';
 import './ItemDetail.css';
-import { useState } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react/cjs/react.development';
 import { NavLink } from 'react-router-dom';
 import { useCart } from '../../contexts/CartContext';
 
@@ -13,12 +13,15 @@ export const ItemDetail = ({details})=> {
 
         const onAdd = (counter)=> {
             setFlag(false);
-            alert("Agregaste " + counter + " producto/s a el carrito")
-            setQuantity(counter);
-            addItem(quantity);
-            console.log(cartStatus);
-              };
+            alert("Agregaste " + counter + " producto/s a el carrito");
+            return setQuantity(counter);
+        };
               
+        useEffect(()=>{
+            quantity && 
+            addItem(details, quantity);
+            setQuantity();
+        }, [details, quantity, addItem, cartStatus, setQuantity])
 
     return (
         <div className="itemDetail">

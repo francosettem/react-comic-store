@@ -4,4 +4,21 @@
   width: 90%;
   margin: 30px auto;
   border: 1px solid grey;
+  display: grid;
+  grid-column: 1;
+}
+
+.cartProduct {
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding: 15px;
+}
+
+.cartProduct__image {
+  height: 200px;
+  width: 200px;
 }
