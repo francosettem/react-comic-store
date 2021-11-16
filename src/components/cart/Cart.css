@@ -1,6 +1,6 @@
 .cart {
   background-color: white;
-  min-height: 80vh;
+  min-height: 300px;
   width: 90%;
   margin: 30px auto;
   border: 1px solid grey;
@@ -21,4 +21,16 @@
 .cartProduct__image {
   height: 200px;
   width: 200px;
+}
+
+.cartProduct__controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.empty {
+  text-align: center;
+  font-size: 2rem;
 }

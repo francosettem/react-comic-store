@@ -10,8 +10,28 @@ export const CartProvider = ({children}) =>{
 const [cartStatus, setCartStatus] = useState([]);
 
 const addItem = (details, quantity) =>{
+    const isInCart = cartStatus.some((product) => product.id === details.id);
+		if (details.stock >= 0) {
+			if (!isInCart) {
+				details.stock = details.stock - quantity;
+				const newItem = {
+					...details,
+					stock: details.stock,
+					counter: quantity,
+				};
 
-    setCartStatus([...cartStatus, {...details , quantity}]) 
+				setCartStatus([...cartStatus, newItem]) 
+			} else {
+				const foundedItem = cartStatus.find(
+					(product) => product.id === details.id
+				);
+				foundedItem.counter = foundedItem.counter + quantity;
+				foundedItem.stock = foundedItem.stock - quantity;
+				setCartStatus([...cartStatus]);
+			}
+		}
+
+    // setCartStatus([...cartStatus, {...details , quantity}]) 
 }
 
 const removeItem = (id)=>{
