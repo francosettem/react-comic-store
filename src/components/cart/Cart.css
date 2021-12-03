@@ -34,3 +34,14 @@
   text-align: center;
   font-size: 2rem;
 }
+
+
+@media screen and (max-width:768px) {
+  .cartProduct {
+    height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  
+}

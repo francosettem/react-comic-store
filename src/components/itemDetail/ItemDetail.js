@@ -14,7 +14,7 @@ export const ItemDetail = ({details})=> {
         const onAdd = (counter)=> {
             setFlag(false);
             alert("Agregaste " + counter + " producto/s a el carrito");
-            return setQuantity(counter);
+            setQuantity(counter);
         };
               
         useEffect(()=>{
@@ -36,7 +36,7 @@ export const ItemDetail = ({details})=> {
         <ItemCount initial={1} stock={details.stock} onAdd={onAdd}/> 
         : 
         <>
-        <p className="itemDetail__quantity">{quantity} product/s added to cart</p>
+        <p className="itemDetail__quantity">{details.counter} product/s added to cart</p>
         <NavLink to="/cart"><button>Go to basket</button></NavLink>
         </>}
 
