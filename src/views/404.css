@@ -1,0 +1,30 @@
+.error404 {
+    background-color: white;
+    width: 90%;
+    margin:10px auto;
+}
+
+.error404__title {
+    font-size: 8rem;
+    display: block;
+    text-align: center;
+}
+
+.error404__description {
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+}
+
+.error404__button {
+    background-color: #555555; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 10px;
+  }

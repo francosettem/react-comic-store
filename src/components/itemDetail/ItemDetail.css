@@ -11,8 +11,20 @@
   width: 100%;
 }
 
+.btn2 {
+  background-color:#008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .itemDetail__image {
     width: 40%;
   }
+  
 }

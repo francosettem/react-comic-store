@@ -7,8 +7,21 @@ import { ItemList } from './components/itemList/ItemList';
 import {ItemDetailContainer} from "./components/itemDetailContainer/ItemDetailContainer";
 import {Cart} from "./components/cart/Cart";
 import {CartProvider} from "./contexts/CartContext";
+import { collection, getDocs } from "firebase/firestore";
+import { getFirestore } from './firebase';
+import { useEffect } from 'react';
+import {Error} from "./views/404";
 
 function App() {
+
+  useEffect(()=> {
+      const db = getFirestore();
+      getDocs(collection(db, "items")).then((snapshot) => {
+        console.log(snapshot.docs.map((doc => doc.data())));
+      });
+ 
+      }, [])
+
 
   return (
     <CartProvider>
@@ -20,7 +33,7 @@ function App() {
 
     <Route exact path="/">
 
-    <Home/>
+      <Home/>
 
     </Route>
 
@@ -34,13 +47,19 @@ function App() {
 
     <Route exact path="/item/:itemId">
 
-    <ItemDetailContainer />
+      <ItemDetailContainer />
 
     </Route>
 
     <Route exact path="/cart">
 
-    <Cart/>
+      <Cart/>
+
+    </Route>
+
+    <Route exact path="*">
+
+      <Error/>
 
     </Route>
 

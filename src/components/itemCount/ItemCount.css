@@ -18,6 +18,17 @@
   font-size: 2rem;
 }
 
+.btn3 {
+  background-color:#f44336;
+  border: none;
+  color: white;
+  padding: 15px 47px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 @media screen and (max-width: 768px) {
   .Item__counter {
     width: 80%;

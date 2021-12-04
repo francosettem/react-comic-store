@@ -9,6 +9,7 @@ export const CartProvider = ({children}) =>{
 
 const [cartStatus, setCartStatus] = useState([]);
 
+
 const addItem = (details, quantity) =>{
     const isInCart = cartStatus.some((product) => product.id === details.id);
 		if (details.stock >= 0) {
@@ -26,12 +27,10 @@ const addItem = (details, quantity) =>{
 					(product) => product.id === details.id
 				);
 				foundedItem.counter = foundedItem.counter + quantity;
-				foundedItem.stock = foundedItem.stock - quantity;
 				setCartStatus([...cartStatus]);
 			}
 		}
 
-    // setCartStatus([...cartStatus, {...details , quantity}]) 
 }
 
 const removeItem = (id)=>{
@@ -44,13 +43,20 @@ const clear = () => {
     setCartStatus([]);
 };
 
+const buy = () => {
+	setCartStatus([]);
+	prompt("Last step, type your email right here")
+	alert(`Thank you! The invoid is coming to your email soon. 😂`);
+};
+
+
 
 useEffect(()=>{
     console.log(...cartStatus);
 }, [cartStatus])
 
 return (
-    <CartContext.Provider value={{cartStatus, addItem, removeItem, clear }}>
+    <CartContext.Provider value={{cartStatus, addItem, removeItem, clear, buy}}>
         {children}
     </CartContext.Provider>
 

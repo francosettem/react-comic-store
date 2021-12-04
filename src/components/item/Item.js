@@ -13,7 +13,7 @@ export const Item = ({item}) => {
         <p className="Item__category">Category: {category.toUpperCase()}</p>
         <p className="Item__price">Price: ${item.price}</p>
         <NavLink to={`/item/${item.id}`}>
-        <button>More info</button>
+        <button className="btn">More info</button>
         </NavLink>
         </div>
     )

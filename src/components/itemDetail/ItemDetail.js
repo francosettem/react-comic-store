@@ -6,7 +6,6 @@ import { useCart } from '../../contexts/CartContext';
 
 export const ItemDetail = ({details})=> {
 
-    const categoryDetail = details.category;
     const [flag, setFlag] = useState(true);
     const [quantity, setQuantity] = useState(null);
     const {cartStatus, addItem } = useCart();
@@ -28,7 +27,7 @@ export const ItemDetail = ({details})=> {
         <img className="itemDetail__image" src={details.thumbnailUrl} alt="" />
         <p className="itemDetail__title">{details.title}</p>
         <p className="itemDetail__description">{details.description}</p>
-        <p className="itemDetail__category">Category: {categoryDetail.toUpperCase()}</p>
+        <p className="itemDetail__category">Category: {details.category}</p>
         <p className="itemDetail__price">Price: ${details.price}</p>
 
         {flag 
@@ -36,11 +35,11 @@ export const ItemDetail = ({details})=> {
         <ItemCount initial={1} stock={details.stock} onAdd={onAdd}/> 
         : 
         <>
-        <p className="itemDetail__quantity">{details.counter} product/s added to cart</p>
-        <NavLink to="/cart"><button>Go to basket</button></NavLink>
+        <p className="itemDetail__quantity">{details.counter} Products added to cart 😁!</p>
+        <NavLink to="/cart"><button className="btn">Go to basket</button></NavLink>
         </>}
 
-            <NavLink to="/"><button>Return to index</button></NavLink>
+            <NavLink to="/"><button className="btn2">Return to index</button></NavLink>
 
         </div>
     )    
