@@ -42,3 +42,11 @@
         font-size: 16px;
         cursor: pointer;
       }
+
+      @media screen and (max-width:768px) {
+        .checkout {
+    
+          width: 100%;
+  
+  }
+      }

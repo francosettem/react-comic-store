@@ -33,6 +33,11 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media screen and (max-width:890px) {
+
+  .listContainer {
+    width: 100%;
+
+  }
   
   .listContainer__content {
     display: grid;
@@ -45,6 +50,11 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 
   @media screen and (max-width:590px) {
   
+    .listContainer {
+      width: 100%;
+  
+    }
+    
     .listContainer__content {
       display: grid;
       grid-template-rows: auto ;

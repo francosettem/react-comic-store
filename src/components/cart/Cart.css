@@ -9,7 +9,7 @@
 }
 
 .cart button {
-  background-color: #555555; /* Green */
+  background-color: green; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -54,6 +54,10 @@
 
 
 @media screen and (max-width:768px) {
+  .cart{width: 100%;
+    min-height: 500px;}
+
+
   .cartProduct {
     height: 500px;
     display: flex;
@@ -69,13 +73,12 @@
     height: auto
   }
 
-  .cartProduct__controls button {
-    width: 100%;
-    margin-top: 5px;
-  }
-
   .cartProduct__controls p {
     font-weight: bold;
+  }
+
+  .cart button {
+   margin-top: 10px;
   }
   
 }
