@@ -1,0 +1,44 @@
+.checkout {
+    
+        background-color: white;
+        min-height: 500px;
+        width: 90%;
+        margin: 30px auto;
+        border: 1px solid grey;
+        padding: 10px;
+
+}
+
+.checkout p {
+        font-size: 2rem;
+        text-align: center;
+}
+
+.checkout input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid grey;
+        border-radius: 4px;
+      }
+
+      .checkout input:focus {
+        border: 1px solid #555;
+      }
+
+      .checkout label {font-size:2rem;}
+
+      .checkout button {
+        background-color: #555555; /* Green */
+        border: none;
+        color: white;
+        margin-top: 5px;
+        padding: 15px 32px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }

@@ -43,20 +43,13 @@ const clear = () => {
     setCartStatus([]);
 };
 
-const buy = () => {
-	setCartStatus([]);
-	prompt("Last step, type your email right here")
-	alert(`Thank you! The invoid is coming to your email soon. 😂`);
-};
-
-
 
 useEffect(()=>{
     console.log(...cartStatus);
 }, [cartStatus])
 
 return (
-    <CartContext.Provider value={{cartStatus, addItem, removeItem, clear, buy}}>
+    <CartContext.Provider value={{cartStatus, addItem, removeItem, clear}}>
         {children}
     </CartContext.Provider>
 

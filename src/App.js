@@ -11,6 +11,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { getFirestore } from './firebase';
 import { useEffect } from 'react';
 import {Error} from "./views/404";
+import { Checkout } from './components/checkout/Checkout';
 
 function App() {
 
@@ -57,11 +58,19 @@ function App() {
 
     </Route>
 
+    
+    <Route exact path="/checkout">
+
+      <Checkout/>
+
+    </Route>
+
     <Route exact path="*">
 
       <Error/>
 
     </Route>
+
 
     </Switch>
 

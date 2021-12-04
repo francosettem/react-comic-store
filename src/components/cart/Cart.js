@@ -1,10 +1,10 @@
 import "./Cart.css";
 import { useCart } from '../../contexts/CartContext';
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export const Cart = () => {
 
-    const {cartStatus, removeItem, clear, buy} = useCart();
+    const {cartStatus, removeItem, clear} = useCart();
     // Cantidad total de Items en mi carrito
     const totalQuantity = cartStatus.reduce((a, b) => a + b.counter, 0);
     // Precio total de items en mi carrito
@@ -29,10 +29,11 @@ return (
 
         <div className="cartProduct__controls">
         <button onClick={clear}>Clear cart</button>
-        <button onClick={buy}>Check Out</button>
+        <Link to="/checkout"><button>Check Out</button></Link>
         <p>Quantity: {totalQuantity}</p>
         <p>Total: ${totalPrice}</p>
         </div>
+
         </>)
  
         ) 
