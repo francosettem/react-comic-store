@@ -1,1 +1,1 @@
-App simple creada en React
+App simple creada con React.js, los productos están alojados en Google Firebase
