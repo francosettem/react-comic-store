@@ -1,6 +1,6 @@
 import { ItemCount } from '../itemCount/ItemCount';
 import './ItemDetail.css';
-import { useEffect, useState } from 'react/cjs/react.development';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useCart } from '../../contexts/CartContext';
 
