@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/nombre-repositorio/static/css/main.d18eeea0.chunk.css",
-    "main.js": "/nombre-repositorio/static/js/main.ef8ca92e.chunk.js",
-    "main.js.map": "/nombre-repositorio/static/js/main.ef8ca92e.chunk.js.map",
-    "runtime-main.js": "/nombre-repositorio/static/js/runtime-main.006ccea0.js",
-    "runtime-main.js.map": "/nombre-repositorio/static/js/runtime-main.006ccea0.js.map",
-    "static/js/2.225086dd.chunk.js": "/nombre-repositorio/static/js/2.225086dd.chunk.js",
-    "static/js/2.225086dd.chunk.js.map": "/nombre-repositorio/static/js/2.225086dd.chunk.js.map",
-    "static/js/3.b4473426.chunk.js": "/nombre-repositorio/static/js/3.b4473426.chunk.js",
-    "static/js/3.b4473426.chunk.js.map": "/nombre-repositorio/static/js/3.b4473426.chunk.js.map",
-    "index.html": "/nombre-repositorio/index.html",
-    "static/css/main.d18eeea0.chunk.css.map": "/nombre-repositorio/static/css/main.d18eeea0.chunk.css.map",
-    "static/js/2.225086dd.chunk.js.LICENSE.txt": "/nombre-repositorio/static/js/2.225086dd.chunk.js.LICENSE.txt"
+    "main.css": "/react-comic-store/static/css/main.d18eeea0.chunk.css",
+    "main.js": "/react-comic-store/static/js/main.732dc048.chunk.js",
+    "main.js.map": "/react-comic-store/static/js/main.732dc048.chunk.js.map",
+    "runtime-main.js": "/react-comic-store/static/js/runtime-main.3a6127fb.js",
+    "runtime-main.js.map": "/react-comic-store/static/js/runtime-main.3a6127fb.js.map",
+    "static/js/2.fe07fd8d.chunk.js": "/react-comic-store/static/js/2.fe07fd8d.chunk.js",
+    "static/js/2.fe07fd8d.chunk.js.map": "/react-comic-store/static/js/2.fe07fd8d.chunk.js.map",
+    "static/js/3.b4473426.chunk.js": "/react-comic-store/static/js/3.b4473426.chunk.js",
+    "static/js/3.b4473426.chunk.js.map": "/react-comic-store/static/js/3.b4473426.chunk.js.map",
+    "index.html": "/react-comic-store/index.html",
+    "static/css/main.d18eeea0.chunk.css.map": "/react-comic-store/static/css/main.d18eeea0.chunk.css.map",
+    "static/js/2.fe07fd8d.chunk.js.LICENSE.txt": "/react-comic-store/static/js/2.fe07fd8d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.006ccea0.js",
-    "static/js/2.225086dd.chunk.js",
+    "static/js/runtime-main.3a6127fb.js",
+    "static/js/2.fe07fd8d.chunk.js",
     "static/css/main.d18eeea0.chunk.css",
-    "static/js/main.ef8ca92e.chunk.js"
+    "static/js/main.732dc048.chunk.js"
   ]
 }
