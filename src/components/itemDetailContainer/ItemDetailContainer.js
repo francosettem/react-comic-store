@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {ItemDetail} from "../itemDetail/ItemDetail";
-import Loader from "react-loader-spinner";
+import { ColorRing } from 'react-loader-spinner'; 
 import { useParams } from "react-router";
 import { collection, getDocs } from "firebase/firestore";
 import { getFirestore } from '../../firebase';
@@ -34,7 +34,16 @@ export const ItemDetailContainer = () => {
 
     return (
     <>
-    {details ? <ItemDetail details={details} key={details.id} /> : <center><Loader type="Puff" color="#00BFFF" height={100} width={100} /></center>}
+    {details ? <ItemDetail details={details} key={details.id} /> : <center>(<ColorRing
+  visible={true}
+  height="200"
+  width="200"
+  ariaLabel="color-ring-loading"
+  wrapperStyle={{}}
+  wrapperClass="color-ring-wrapper"
+  colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+  />)
+</center>}
     </>
     )
     

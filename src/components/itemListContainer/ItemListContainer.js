@@ -1,4 +1,5 @@
 import './ItemListContainer.css';
+import { ItemList } from "../itemList/ItemList"; 
 
 export const ItemListContainer = ({children}) => {
 
@@ -10,6 +11,8 @@ export const ItemListContainer = ({children}) => {
         <div className="listContainer__content">
 
         {children}
+
+        <ItemList/>
 
         </div>
 
