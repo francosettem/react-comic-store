@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/react-comic-store/static/css/main.d18eeea0.chunk.css",
-    "main.js": "/react-comic-store/static/js/main.732dc048.chunk.js",
-    "main.js.map": "/react-comic-store/static/js/main.732dc048.chunk.js.map",
-    "runtime-main.js": "/react-comic-store/static/js/runtime-main.3a6127fb.js",
-    "runtime-main.js.map": "/react-comic-store/static/js/runtime-main.3a6127fb.js.map",
-    "static/js/2.fe07fd8d.chunk.js": "/react-comic-store/static/js/2.fe07fd8d.chunk.js",
-    "static/js/2.fe07fd8d.chunk.js.map": "/react-comic-store/static/js/2.fe07fd8d.chunk.js.map",
-    "static/js/3.b4473426.chunk.js": "/react-comic-store/static/js/3.b4473426.chunk.js",
-    "static/js/3.b4473426.chunk.js.map": "/react-comic-store/static/js/3.b4473426.chunk.js.map",
+    "main.css": "/react-comic-store/static/css/main.091f6ab9.css",
+    "main.js": "/react-comic-store/static/js/main.1271df55.js",
+    "static/js/453.92a7adf2.chunk.js": "/react-comic-store/static/js/453.92a7adf2.chunk.js",
     "index.html": "/react-comic-store/index.html",
-    "static/css/main.d18eeea0.chunk.css.map": "/react-comic-store/static/css/main.d18eeea0.chunk.css.map",
-    "static/js/2.fe07fd8d.chunk.js.LICENSE.txt": "/react-comic-store/static/js/2.fe07fd8d.chunk.js.LICENSE.txt"
+    "main.091f6ab9.css.map": "/react-comic-store/static/css/main.091f6ab9.css.map",
+    "main.1271df55.js.map": "/react-comic-store/static/js/main.1271df55.js.map",
+    "453.92a7adf2.chunk.js.map": "/react-comic-store/static/js/453.92a7adf2.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.3a6127fb.js",
-    "static/js/2.fe07fd8d.chunk.js",
-    "static/css/main.d18eeea0.chunk.css",
-    "static/js/main.732dc048.chunk.js"
+    "static/css/main.091f6ab9.css",
+    "static/js/main.1271df55.js"
   ]
 }
