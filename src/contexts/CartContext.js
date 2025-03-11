@@ -45,7 +45,7 @@ const clear = () => {
 
 
 useEffect(()=>{
-    console.log(...cartStatus);
+    // console.log(...cartStatus);
 }, [cartStatus])
 
 return (

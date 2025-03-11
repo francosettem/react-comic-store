@@ -25,8 +25,7 @@ return (
   <input type="text" id="country" name="country" placeholder="Argentina..." required/>
 <button type="submit">Buy</button>
 </form> </>) : (<>
-                <p>Nothing Here 😐</p>
-                <p>Try adding something to cart 😉</p> 
+                <p>Thank you for your order 😉</p> 
                 </>) }
 
         </div>)
