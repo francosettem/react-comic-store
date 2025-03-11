@@ -1,5 +1,6 @@
 {
   "name": "react-comic-store",
+  "homepage": "https://francosettem.github.io/react-comic-store/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,12 +15,15 @@
     "web-vitals": "^1.1.2"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

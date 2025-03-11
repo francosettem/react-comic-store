@@ -26,7 +26,7 @@ function App() {
 
   return (
     <CartProvider>
-    <BrowserRouter>
+    <BrowserRouter basename="/react-comic-store">
 
     <NavBar/>
 
